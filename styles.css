@@ -1,0 +1,215 @@
+/* styles.css */
+
+/* Styles généraux pour le contenu */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styles pour l'en-tête */
+header {
+  background-color: #f2f2f2;
+  padding: 40px 0;
+  width: 100%;
+  top: 0; /* Position the header at the top of the viewport */
+  position: relative; /* Change to relative positioning */
+  z-index: 1000; /* Ensure the header is above other elements */  
+}
+
+/* Logo garden school image */
+.logo-link {
+  text-decoration: none;
+  align-items: center;
+}
+
+.logo-link img {
+  max-height: 200px;
+  position: relative;
+  max-width: 200px;
+  float:left;
+  margin-top:-85px;
+  cursor: pointer;
+}
+/* Logo garden school image end*/
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Styles pour les images */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Presention {
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the div horizontally */
+  text-align: left; /* Center the text content */
+}
+
+.Nursery-images {
+  text-align: center; /* Center content horizontally */
+}
+
+.Nursery-images .container {
+  max-width: 2000px; /* Set maximum width for container */
+  margin: 0 auto; /* Center container horizontally */
+}
+
+.Nursery-images .image-container {
+  display: inline-block;
+  width: 350px; /* Set a fixed width for the image containers */
+  height: 350px; /* Set a fixed height for the image containers */
+  margin: 0px; /* Add margin between images */
+  overflow: hidden; /* Hide any overflow from images */
+}
+.Nursery-images .nursery-img {
+  width: 100%; /* Ensure images fill their containers */
+  height: 100%; /* Ensure images fill their containers */
+  object-fit: cover; /* Resize image to cover container while preserving aspect ratio */
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.nursery-img {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.Nursery-images::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.Nursery-images .girafe-img {
+  max-width: 100%; /* Set maximum width for girafe image */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 20px; /* Add margin between last image and text */
+}
+
+
+
+/* Styles pour le pied de page */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+  display: block;
+  height: 50px;
+  width: 100%;
+}
+
+/* Adjust footer container for horizontal layout */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to a new line if needed */
+  justify-content: space-between; /* Distribute items evenly */
+}
+
+.footer-info {
+  flex-basis: 48%; /* Set width to distribute evenly across the footer */
+  margin-bottom: 10px; /* Add margin to create space between items */
+}
+
+.footer-info h3 {
+  margin-bottom: 10px;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+/* Adjust footer container for table layout */
+#ftr-wrap {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#ftr-wrap > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.footer-info {
+  text-align: left;
+  padding: 0 20px; /* Add padding to separate footer sections */
+}
+
+.footer-info h3 {
+  margin-bottom: 10px;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+/* Additional styles for footer links */
+.ftr-links ul {
+  padding: 0;
+}
+
+.ftr-links ul li {
+  display: inline-block;
+  padding-right: 0px;
+  font-size: 0.75em;
+}
+
+.ftr-links ul li a {
+  color: #fff;
+  margin: 0;
+}
+
+/* Align the footer sections */
+.footer-info:nth-child(1) {
+  text-align: center;
+}
+
+.footer-info:nth-child(2) {
+  text-align: center;
+}
+
+.footer-info:nth-child(3) {
+  text-align: center;
+}
+
+.footer-info img {
+  width: 30px; /* Adjust the size of the social media logos */
+  margin: 0 5px; /* Add margin between the logos */
+}
+
+/* Position the copyright at the bottom */
+.copyright {
+  position: relative; /* Fix the element at the bottom of the viewport */
+  bottom: 0; /* Stick it to the bottom */
+  left: 0; /* Align it to the left */
+  right: 0; /* Align it to the right */
+  text-align: center; /* Center the content horizontally */
+  padding: 20px 0; /* Add padding */
+  background-color: #333; /* Example background color */
+  color: white; /* Example text color */
+}
